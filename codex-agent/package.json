@@ -7,9 +7,9 @@
     "codex-agent": "./bin/codex-agent.js"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "tsx src/cli/index.ts start",
-    "dev": "tsx src/cli/index.ts",
+    "build": "node init && tsc",
+    "start": "node init && tsx src/cli/index.ts start",
+    "dev": "node init && tsx src/cli/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "prepublishOnly": "npm run build"
